@@ -1,7 +1,7 @@
 services:
-  frontend:
+  blog:
     build:
-      context:blog
+      context: blog
       target: development
     ports:
       - 4200:4200
