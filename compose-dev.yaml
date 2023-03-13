@@ -1,10 +1,11 @@
 services:
   blog:
-    context:blog
-    target: development
-  ports:
-    - 4200:4200
-  volumes:
-      - blog-files:/blog
+    build:
+      context: blog
+      target: development
+    ports:
+      - 4200:4200
+    volumes:
+        - blog-files:/blog
 volumes:
-  blog-files
+  blog-files:
