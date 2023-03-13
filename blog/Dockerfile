@@ -1,6 +1,7 @@
 FROM node:lts-buster-slim AS development
 
-
+RUN mkdir /blog
+WORKDIR /blog
 
 COPY package.json package.json
 COPY package-lock.json package-lock.json
