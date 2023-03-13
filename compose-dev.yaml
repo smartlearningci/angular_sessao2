@@ -8,4 +8,4 @@ services:
     volumes:
         - blog-files:/blog
 volumes:
-  blog-files
+  blog-files:
