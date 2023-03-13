@@ -1,5 +1,5 @@
 services:
-  buikd:
+  build:
     blog:
       context:blog
       target: development
