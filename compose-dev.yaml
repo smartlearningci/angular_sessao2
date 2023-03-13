@@ -1,6 +1,6 @@
 services:
-  build:
-    frontend:
+  frontend:
+    build:
       context:blog
       target: development
     ports:
