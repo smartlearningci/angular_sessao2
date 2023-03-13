@@ -7,7 +7,7 @@ COPY package-lock.json package-lock.json
 
 RUN npm ci
 
-COPY /blog /blog
+COPY . .
 
 RUN npm install -g @angular/cli
 
