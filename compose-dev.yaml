@@ -6,6 +6,6 @@ services:
     ports:
       - 4200:4200
     volumes:
-        - blog:/blog
+        - blog-files:/blog
 volumes:
-  blog
+  blog-files
