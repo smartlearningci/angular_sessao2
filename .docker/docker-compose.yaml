@@ -7,5 +7,5 @@ services:
       - 4200:4200
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./blog:/project
-      - /project/node_modules
+      - ./blog:/project_sessao2
+      - /project_sessao2/node_modules
