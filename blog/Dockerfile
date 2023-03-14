@@ -2,8 +2,8 @@
 
 FROM --platform=$BUILDPLATFORM node:18.14-bullseye-slim as builder
 
-RUN mkdir /project
-WORKDIR /project
+RUN mkdir /project_sessao2
+WORKDIR /project_sessao2
 
 RUN npm install -g @angular/cli
 
@@ -15,12 +15,7 @@ CMD ["ng", "serve", "--host", "0.0.0.0"]
 
 FROM builder as dev-envs
 
-RUN <<EOF
 
-FROM ubuntu:latest
-RUN apt-get -y update
-RUN apt-get -y install -y --no-install-recommends git
-EOF
 
 RUN <<EOF
 useradd -s /bin/bash -m vscode
