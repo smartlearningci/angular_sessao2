@@ -7,4 +7,4 @@ services:
       - 4200:4200
     volumes:
       - ./blog:/project
-      - /project/node_modules
+      - /project_sessao2/node_modules
