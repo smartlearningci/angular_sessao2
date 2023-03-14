@@ -1,11 +1,10 @@
 services:
-  blog:
+  web:
     build:
-      context: blog
-      target: development
+      context: app
+      target: builder
     ports:
       - 4200:4200
     volumes:
-        - blog-files:/blog
-volumes:
-  blog-files:
+      - ./app:/project
+      - /project/node_modules
